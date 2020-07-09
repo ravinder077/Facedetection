@@ -13,9 +13,9 @@ class Database {
 	public int age;
 	public String sec;
 
-	public final String Database_name = "ghosteye";
-	public final String Database_user = "root";
-	public final String Database_pass = "";
+	public final String Database_name = "tuesptrh_facedemo";
+	public final String Database_user = "tuesptrh_face";
+	public final String Database_pass = "Tuespot@100";
 
 	public Connection con;
 
@@ -24,7 +24,7 @@ class Database {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			try {
-				this.con = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + Database_name, Database_user,
+				this.con = DriverManager.getConnection("jdbc:mysql://103.50.162.156:3306/" + Database_name, Database_user,
 						Database_pass);
 			} catch (SQLException e) {
 
